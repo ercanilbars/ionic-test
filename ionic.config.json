@@ -1,0 +1,8 @@
+{
+  "name": "bridegroomtr",
+  "app_id": "dc168639",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

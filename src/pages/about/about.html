@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hakkımızda</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-list no-lines>
+  <button ion-item *ngFor="let about of abouts" (click)="itemTapped($event,about)">
+   Gelin Açıklama:{{about.bride_text}}
+   <div item-right>Damat Açıklama:{{about.groom_text}}</div>
+  </button>
+
+</ion-list>
+</ion-content>

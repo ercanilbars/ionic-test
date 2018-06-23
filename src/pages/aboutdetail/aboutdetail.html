@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hakkımızda Detay</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    
+  
+
+  <ion-card>
+    <p>Gelin Fotoğrafı</p>
+    <ion-img style="width: 300px; height: 300px;" src="http://ayseileferit.gokhancikrikcioglu.com/{{selectedAbout.bride_tmb}}"></ion-img>
+    <ion-grid>
+        <ion-row>
+          <ion-col><button ion-button full>Fotoğraf Değiştir</button></ion-col>
+        </ion-row>
+      </ion-grid>
+    <ion-card-content>
+        <ion-item>
+            <ion-label floating>Gelin Açıklama</ion-label>
+            <ion-input type="text" value="{{selectedAbout.bride_text}}"></ion-input>
+          </ion-item>
+    </ion-card-content>
+    <p>Damat Fotoğrafı</p>
+    <ion-img style="width: 300px; height: 300px;" src="http://ayseileferit.gokhancikrikcioglu.com/{{selectedAbout.groom_tmb}}"></ion-img>
+    <ion-grid>
+        <ion-row>
+          <ion-col><button ion-button full>Fotoğraf Değiştir</button></ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-card-content>
+          <ion-item>
+              <ion-label floating>Damat Açıklama</ion-label>
+              <ion-input type="text" value="{{selectedAbout.groom_text}}"></ion-input>
+            </ion-item>
+            <ion-col><button ion-button full>Kaydet</button></ion-col>
+      </ion-card-content>
+
+  </ion-card>
+</ion-content>
+
